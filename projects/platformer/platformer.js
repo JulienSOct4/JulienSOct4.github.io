@@ -75,7 +75,8 @@ createPlatform(900,190,400,20)
 createCannon("bottom",490,1500,100,100)
 createCannon("bottom",790,1500,100,100)
 createCannon("left",40,2000,10,10)
-createCannon("right",160,2000,10,10)
+createCannon("right",158,2000,10,10)
+createCannon("top",759,750,20,20)
 
     /////////////////////////////////////////////////
     //////////ONLY CHANGE ABOVE THIS POINT///////////
