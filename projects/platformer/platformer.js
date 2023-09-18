@@ -56,9 +56,12 @@ createPlatform(700,340,200,20)
 createPlatform(990,440,20,20)
 createPlatform(100,190,400,20)
 createPlatform(900,190,400,20)
-createPlatform(100,0,20,200)
-createPlatform(1280,0,20,200)
-createPlatform(10,200,20,100)
+createPlatform(80,0,20,210)
+createPlatform(1300,0,20,210)
+createPlatform(290,100,20,100)
+createPlatform(390,100,20,100)
+createPlatform(990,100,20,100)
+createPlatform(1090,100,20,100)
 
     // TODO 2
     // Create collectables
@@ -67,9 +70,9 @@ createPlatform(10,200,20,100)
     // example usage: createCollectable(type, x, y, gravity, bounce)
 
 createCollectable('database',380,300)
-createCollectable('diamond',230,30)
+createCollectable('diamond',130,30)
 createCollectable('grace',980,300)
-createCollectable('kennedi',1130,30)
+createCollectable('kennedi',1230,30)
 createCollectable('max',680,500)
 createCollectable('steve',1230,600)
 
