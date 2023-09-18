@@ -29,10 +29,10 @@ $(function () {
      */
 
     for (let i = 100; i < canvas.width; i += 100) {
-      createPlatform(i, canvas.height, -1, -canvas.height);
+    //  createPlatform(i, canvas.height, -1, -canvas.height);
     }
     for (let i = 100; i < canvas.height; i += 100) {
-      createPlatform(canvas.width, i, -canvas.width, -1);
+    //  createPlatform(canvas.width, i, -canvas.width, -1);
     }
 
     /////////////////////////////////////////////////
@@ -84,8 +84,8 @@ createCollectable('steve',1230,600)
 
 createCannon("bottom",490,1500,100,100)
 createCannon("bottom",790,1500,100,100)
-createCannon("left",-10,2000,16.2,16.2)
-createCannon("right",108,2000,16.2,16.2)
+createCannon("left",-10,2000,100,100)
+createCannon("right",108,2000,100,100)
 createCannon("top",759,750,20,20)
 
     /////////////////////////////////////////////////
