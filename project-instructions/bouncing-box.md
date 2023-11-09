@@ -936,8 +936,8 @@ Now that we have this function set up, we need to figure out *when* to call it.
 ### **TODO 8:** *Go Live*
 
 In your bash terminal, enter the following commands, pressing ENTER after each one:
-
-`git add .`
+`
+`git add .
 `git commit -m 'add bouncing box'`
 
 
