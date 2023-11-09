@@ -938,8 +938,8 @@ Now that we have this function set up, we need to figure out *when* to call it.
 In your bash terminal, enter the following commands, pressing ENTER after each one:
 
 `git add .`
-
 `git commit -m 'add bouncing box'`
+
 
 `git push`
 
