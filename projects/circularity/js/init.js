@@ -38,6 +38,11 @@ var init = function (window) {
         drawCircle();
         drawCircle();
 
+        for (var loopsCompleted = 1; loopsCompleted <= 100; loopsCompleted++) {
+            drawCircle()
+        }
+        
+
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
         ////////////////////////////////////////////////////////////
@@ -78,9 +83,15 @@ var init = function (window) {
             // TODO 6 : YOUR CODE STARTS HERE //////////////////////
            if (circle.x > canvas.width) {
             circle.x = 0
-           }
+           } else if (circle.y > canvas.height) {
+            circle.y = 0
+           } else if (circle.x < 0) {
+            circle.x = canvas.width
+           } else if (circle.y < 0) {
+            circle.y = canvas.height
+           };
         
-
+           var rightEdge = circle.x + circle.radius;
 
             // YOUR TODO 6 CODE ENDS HERE //////////////////////////
         }
