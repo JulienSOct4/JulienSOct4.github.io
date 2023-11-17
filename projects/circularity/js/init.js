@@ -55,23 +55,19 @@ var init = function (window) {
         function update() {
             
             // TODO 4 : Update the circle's position //
-            physikz.updatePosition(circles[0]);
-            physikz.updatePosition(circles[1]);
-            physikz.updatePosition(circles[2]);
-            physikz.updatePosition(circles[3]);
-            physikz.updatePosition(circles[4]);
-
+           
+            //Function call was deleted because a loop was created to serve its purpose with a single line of code
 
             // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
-            game.checkCirclePosition(circles[0]);
-            game.checkCirclePosition(circles[1]);
-            game.checkCirclePosition(circles[2]);
-            game.checkCirclePosition(circles[3]);
-            game.checkCirclePosition(circles[4]);
+            
+            //Function call was deleted because a loop was created to serve its purpose with a single line of code
 
 
             // TODO 9 : Iterate over the array
-           
+            for (var i = 0; i < circles.length; i++) {
+                physikz.updatePosition(circles[i])
+                game.checkCirclePosition(circles[i])
+               }
             
          
         }
@@ -86,13 +82,14 @@ var init = function (window) {
             // if the circle has gone past the RIGHT side of the screen then place it on the LEFT
             // TODO 6 : YOUR CODE STARTS HERE //////////////////////
            if (circle.x > canvas.width) {
-            circle.x = 0
+            circle.x = 0 //Checks if circle goes off the right, teleports to left if true
            } if (circle.y > canvas.height) {
-            circle.y = 0
+            circle.y = 0 //Checks if circle goes off the bottom, teleports to top if true
            } if (circle.x < 0) {
-            circle.x = canvas.width
+            circle.x = canvas.width //Checks if circle goes off the left, teleports to right if true
            } if (circle.y < 0) {
-            circle.y = canvas.height
+            circle.y = canvas.height //Checks if circle goes off the top, teleports to right if bottom
+        } if (circle.y < 0) {
            };
         
            var rightEdge = circle.x + circle.radius;
