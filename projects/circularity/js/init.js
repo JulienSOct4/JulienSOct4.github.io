@@ -69,7 +69,7 @@ var init = function (window) {
                 game.checkCirclePosition(circles[i])
                }
             
-         
+        
         }
     
         /* 
