@@ -83,8 +83,7 @@ var init = function (window) {
             circle.x = canvas.width //Checks if circle goes off the left, teleports to right if true
            } if (circle.y < 0) {
             circle.y = canvas.height //Checks if circle goes off the top, teleports to right if bottom
-        } if (circle.y < 0) {
-           };
+           }
         
            var rightEdge = circle.x + circle.radius;
 
